@@ -10,14 +10,14 @@
         <local:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
     </Window.Resources>
 
-    <Grid ScrollViewer.VerticalScrollBarVisibility="Auto">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Auto" Height="584">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black"/>
                 <GradientStop Color="#FF27582E" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ItemsControl x:Name="AttractionsContainer" Margin="43,51,43,50">
+        <ItemsControl x:Name="AttractionsContainer" Margin="43,51,43,52">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="2"/>
