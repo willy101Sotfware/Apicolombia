@@ -3,22 +3,39 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Departamentos de Colombia" 
         Height="300" Width="300">
-    <Grid>
-        <TextBox TextWrapping="Wrap" Text="Selecione un Departamneto" Margin="0,25,0,0" RenderTransformOrigin="0.458,1.79" TextChanged="TextBox_TextChanged" Background="#FF9C9A64" FontFamily="Arial Rounded MT Bold" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center"/>
 
+    <!-- Fondo oscuro para toda la ventana -->
+    <Grid x:Name="grid1" Background="#121212">
+
+        <!-- TextBox con fondo oscuro -->
+        <TextBox TextWrapping="Wrap" 
+                 Text="Seleccione un Departamento" 
+                 Margin="0,25,0,0" 
+                 RenderTransformOrigin="0.458,1.79" 
+                 TextChanged="TextBox_TextChanged" 
+                 FontFamily="Arial Rounded MT Bold" 
+                 FontSize="18" 
+                 HorizontalAlignment="Center" 
+                 VerticalAlignment="Top" 
+                 TextAlignment="Center" 
+                 Foreground="White" 
+                 Background="#333333" 
+                 BorderBrush="#555555" 
+                 BorderThickness="1"/>
+
+        <!-- ComboBox con fondo oscuro -->
         <ComboBox x:Name="DepartmentComboBox"
-                Margin="0,110,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Width="212"
-                DisplayMemberPath="Name"
-                SelectionChanged="DepartmentComboBox_SelectionChanged" Height="32" Text="Selecionar " FontFamily="Kristen ITC" Foreground="#FF960D0D" RenderTransformOrigin="0.519,-0.999">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#FFF0F0F0"/>
-                    <GradientStop Color="#FF9DE2B1" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-        </ComboBox>
+                  Margin="0,110,0,0"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Top"
+                  Width="212"
+                  Height="32"
+                  DisplayMemberPath="Name"
+                  SelectionChanged="DepartmentComboBox_SelectionChanged"
+                  FontFamily="Kristen ITC"
+                  Foreground="#FF0E0C0C" 
+                  Background="#333333" 
+                  BorderBrush="#555555" 
+                  BorderThickness="1"/>
     </Grid>
 </Window>
